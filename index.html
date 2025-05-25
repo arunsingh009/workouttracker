@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gym Guide - 3 Month Tracker</title>
+<link rel="icon" type="" href="favicon.png">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <h1>3-Month Gym Workout Plan</h1>
+  </header>
+
+  <main>
+    <section class="calendar"></section>
+  </main>
+  <div style="display: flex;width:100%; align-items: center;justify-content: center;">
+
+      <button id="toggle-history-btn">📋 Show Workout History</button>
+  </div>
+
+  <section class="log-section hidden" id="log-section">
+    <h2>Workout History</h2>
+    <table id="log-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Day</th>
+          <!-- <th>Focus</th> -->
+          <th>Status</th>
+          <!-- <th>Workouts</th> -->
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <div id="workout-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="day-title"></h2>
+      <ul id="workout-list"></ul>
+      <button id="mark-done">Mark as Done</button>
+      <button id="mark-Skip">Skip Workout</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
