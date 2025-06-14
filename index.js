@@ -20,7 +20,8 @@ const days = [
    }
 ];
 const calendar = document.querySelector(".calendar");
-let useAlternate = false; 
+let useAlternate = false;
+let isPrimary = true; 
 
 function getTodayDate() {
   return new Date().toLocaleDateString("en-IN", {
@@ -98,6 +99,7 @@ function showWorkout(day, focus, workouts,alternateWorkouts) {
   
   document.getElementById("switch-set").onclick = () => {
    useAlternate = !useAlternate;
+   document.getElementById("switch-set").textContent = useAlternate ? "Switch to Primary Set" : "Switch to Alternate Set";
    showWorkout(day, focus, workouts, alternateWorkouts); // Re-render modal
   };
 
