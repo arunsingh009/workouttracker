@@ -80,6 +80,18 @@ header {
   cursor: pointer;
 }
 
+#switch-set{
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
 .log-section {
   padding: 1rem;
   background: #fff;
